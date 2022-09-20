@@ -9,12 +9,18 @@ package com.mycompany.examen2;
  * @author edgar
  */
 public class main {
-
+    static conexionDB connMongo;
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        connMongo = new conexionDB();
+        connMongo.setBD();
+        
+        
+        Maquinaria hola = new Maquinaria();
+        hola.setVisible(true);
     }
     
 }
